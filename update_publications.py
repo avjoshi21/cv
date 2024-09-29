@@ -4,9 +4,10 @@ import re
 import urllib.parse
 import requests
 
-LIBRARY = 'd7O0jq6KSTqnvppvvHjpjQ'  # The ADS library where I keep my papers
+LIBRARY = '5nrEtnqzTe-4-GyfXcS6SA'  # The ADS library where I keep my papers
 MENTORED_STUDENTS = ['Razo-López, N. B.']
-MY_NAME = 'Yarza, R.'
+MY_NAME = 'Joshi, A. V.'
+MY_NAME_ALT = 'Joshi, A.'
 
 # If the number of authors in the paper is larger than MAX_AUTHORS,
 # truncate author list and add "et al."
@@ -14,7 +15,7 @@ MAX_AUTHORS = 4
 
 
 with open("api.key", encoding='utf-8') as key:
-    TOKEN = key.read()
+    TOKEN = key.read().strip()
 
 
 class Paper:
@@ -89,7 +90,7 @@ class Paper:
         my_position = [
             idx for idx, author
             in enumerate(self.authors)
-            if author == MY_NAME][0]
+            if ((author == MY_NAME) or (author==MY_NAME_ALT))][0]
 
         temp_authors = self.authors.copy()
 
