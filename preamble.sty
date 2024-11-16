@@ -18,7 +18,22 @@
 \pagenumbering{gobble}
 
 % \def\withcourses{}
+% \def\withtalks{}
 \def\withpress{}
+
+
+% set a paragraph indented by some amount
+\newcommand{\indentpar}[1]{%
+    % end the previous section as an old paragraph
+    \par
+    \vspace{-\parskip}\vspace{-\baselineskip}% Automatically remove extra vertical space
+    \begingroup
+    \leftskip=1em % Adjust this value as needed
+    \noindent
+    #1\par
+    \endgroup
+}
+
 
 \def\adslibrary{https://ui.adsabs.harvard.edu/public-libraries/5nrEtnqzTe-4-GyfXcS6SA}
 \def\googlescholar{https://scholar.google.com/citations?hl=en&user=1pBp1QgAAAAJ}
