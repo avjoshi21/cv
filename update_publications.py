@@ -141,6 +141,7 @@ class Paper:
             entry += '{' f'{self.short_journal}, {self.volume}, {self.page}' '}'
             # entry +=fr'{{{self.short_journal}, {self.volume}, {self.issue}}}'
         entry += r'\\\textit{' + self.tex_title + '}'
+        entry = re.sub(r'(?<!\\)&', r'\\&', entry)
         return entry
 
 
