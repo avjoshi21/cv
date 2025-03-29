@@ -1,4 +1,11 @@
-\documentclass[12pt]{article}
+\makeatletter
+\renewcommand\@xipt{11}
+\renewcommand\@xviipt{17}
+\renewcommand\@xxpt{20}
+\renewcommand\@xxvpt{25}
+\makeatother
+
+\documentclass[11pt]{article}
 \input{preamble.sty}
 
 \begin{document}
@@ -10,11 +17,11 @@ avjoshi2@illinois.edu $|$ \href{https://avjoshi21.github.io}{avjoshi21.github.io
 
 \section*{Education}
 PhD, Physics, University of Illinois Urbana-Champaign \hfill 2019--present\\
-Advisor: Professor Charles Gammie  %\hfill {\small GPA: $3.9/4.0$}
+Advisor: Professor Charles Gammie  \hfill {\normalsize GPA: $3.9/4.0$}
 
 
 BS, Engineering Physics, University of Illinois Urbana-Champaign \hfill 2015--2018\\
-{\small Summa Cum Laude, Computer Science Minor}% \hfill GPA: $3.83/4.0$}
+{\normalsize Summa Cum Laude, Computer Science Minor} {\hfill GPA: $3.83/4.0$}
 
 % \section*{Research Overview}
 % I am a computational astrophysicist working on accretion onto supermassive black holes, with a focus on radiative processes that are observationally relevant. This involves applying radiative transfer methods to magnetohydrodynamic models within the context of general relativity. Other topics I am interested in are magnetohydrodynamics, numerical relativity and astrophysical plasmas in general. %I use both high-performance computing (HPC) and high-throughput computing (HTC) methods to generate simulations and compare them to observations for model inference.
@@ -33,7 +40,7 @@ Software Intern at Thermo Fisher Scientific San Jose, CA \hfill Summer 2019\\
 
 \section*{Research Experience}
 \textbf{Radiative Transfer methods}\\
-\indentpar{Developed and maintained deterministic and Monte Carlo radiative transfer codes in the \href{https://github.com/AFD-Illinois}{AFD-Illinois group}. \\Experience with polarized modeling, circular polarization in particular.\\Generated large libraries of simulated black hole images and applied statistical methods for model inference with observations for both individual and Event Horizon Telescope collaboration projects.}
+\indentpar{Developed and maintained deterministic and Monte Carlo radiative transfer codes in the \href{https://github.com/AFD-Illinois}{AFD-Illinois group}. \\Experience with polarized modeling, circular polarization in particular.\\Generated large libraries of simulated black hole images and applied statistical methods for model inference with observations for both individual and Event Horizon Telescope collaboration (EHT) projects.}
 
 \textbf{General Relativistic Magnetohydrodynamics}\\
 \indentpar{Generated and analyzed simulations of accretion flows. Computed emission proxies and jet power statistics for model inference.}
@@ -48,8 +55,7 @@ UIUC James Scholar Honors \hfill 2016--2018
 
 \section*{Selected Publications}
 Lists: \href{\adslibrary}{NASA ADS}, \href{\googlescholar}{Google Scholar}, \href{https://orcid.org/0000-0002-2514-5965}{ORCID}.
-% \input{metrics.tex}\\
-% Underline indicates mentored student
+\input{metrics.tex}
 
 \begin{etaremune}[leftmargin=1.25em]
 \input{papers.tex}

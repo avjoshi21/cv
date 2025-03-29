@@ -202,8 +202,8 @@ def main() -> None:
     # Write them to the TeX file
     with open("metrics.tex", "w", encoding='utf-8') as tex_file:
         tex_file.write(
-            f"{n_first_author} first-author"
-            f", {citations} citations"
+            f"{citations} citations"
+            f", {n_first_author} first-author"
             # f", h-index {h_index}"
         )
 
