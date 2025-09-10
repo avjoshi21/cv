@@ -1,0 +1,21 @@
+\makeatletter
+\renewcommand\@xipt{11}
+\renewcommand\@xviipt{17}
+\renewcommand\@xxpt{20}
+\renewcommand\@xxvpt{25}
+\makeatother
+
+\documentclass[11pt]{article}
+\input{preamble.sty}
+
+\begin{document}
+
+\section*{Selected Publications}
+Lists: \href{\adslibrary}{NASA ADS}, \href{\googlescholar}{Google Scholar}, \href{https://orcid.org/0000-0002-2514-5965}{ORCID}.
+\input{metrics.tex}
+
+\begin{etaremune}[leftmargin=1.25em]
+\input{papers.tex}
+\end{etaremune}
+
+\end{document}
