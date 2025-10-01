@@ -5,7 +5,7 @@ import urllib.parse
 import requests
 
 LIBRARY = '5nrEtnqzTe-4-GyfXcS6SA'  # The ADS library where I keep my papers
-MENTORED_STUDENTS = ['Razo-López, N. B.']
+MENTORED_STUDENTS = []
 MY_NAME = 'Joshi, A. V.'
 MY_NAME_ALT = 'Joshi, A.'
 
@@ -202,8 +202,8 @@ def main() -> None:
     # Write them to the TeX file
     with open("metrics.tex", "w", encoding='utf-8') as tex_file:
         tex_file.write(
-            f"{citations} citations"
-            f", {n_first_author} first-author"
+            # f"{citations} citations"
+            f"{n_first_author} first-author"
             # f", h-index {h_index}"
         )
 
